@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="rendu">Ce fichier html ce trouve à l'address suivante à partir de la racine du dossier: PrediCampus\formulaire\templates\rendu.html. J'espère que mon travail repondra à vos bésoins et est à la hateur de vos attentes. Merci !</h1>
+      <br /><br />
+      <H2>Données entrées:</H2>
+      <p>Moyenne du bac :{{ bac }}</p>
+      <p>Valeur de la série:{{ serie }}</p>
+      <p>Note français:{{ francais }}</p>
+      <p>Note philosophie:{{ philo }}</p>
+      <p>Note anglais:{{ anglais }}</p>
+      <p>Note mathematiques:{{ math }}</p>
+      <p>Note geographie:{{ geo }}</p>
+      <p>Valeur de la filiere:{{ filiere }}</p>
+    </div>
+  </body>
+</html>

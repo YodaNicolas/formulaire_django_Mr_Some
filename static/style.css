@@ -1,0 +1,42 @@
+.rendu{
+    color: rgb(0, 255, 0);
+}
+.TITRE{
+    margin-top: 12px;
+    color: rgb(2, 255, 255);
+}
+.Important{
+    margin: 8px;
+    color: red;
+}
+.filiere_désirée{
+    display: flex !important;
+    width: 100%;  
+   gap: 10px;
+}
+.lingNote{
+display: flex !important;
+width: 100% !important;
+}
+.radio{
+   margin-bottom: 12px !important;
+}
+.divform{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95% !important;
+    color: white;
+  background-image: url('crayons.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:70%;
+border-radius: 10px;
+box-shadow: (12 0 12);
+}
+
+.bouton{
+    margin-top: 105px;
+ margin: 8px !important;
+}

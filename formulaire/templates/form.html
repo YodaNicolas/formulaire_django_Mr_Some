@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulaire de prediction</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+  </head>
+  <body>
+    <div class="container divform">
+      <form action method="POST">
+        <h3 class="text-center TITRE">FORMULAIRE DE PREDICTION</h3>
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="">{{ form.moyenne_au_BAC.label_tag }} {{ form.moyenne_au_BAC }}</div>
+            <div class="">{{ form.Note_en_francais.label_tag }} {{ form.Note_en_francais }}</div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="">{{ form.Note_en_philosophie.label_tag }} {{ form.Note_en_philosophie }}</div>
+            <div class="">{{ form.Note_en_mathematiques.label_tag }} {{ form.Note_en_mathematiques }}</div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="">{{ form.Note_en_anglais.label_tag }} {{ form.Note_en_anglais }}</div>
+            <div class="">{{ form.Note_en_geographie.label_tag }} {{ form.Note_en_geographie }}</div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">{{ form.Serie_du_BAC.label_tag }} {{ form.Serie_du_BAC }}</div>
+          <div class="col-md-6 col-sm-12 radio">{{ form.filiere_desiree.label_tag }} {{ form.filiere_desiree }}</div>
+          <span class="Important">Important: Utilisez le point "." en lieu et place de la virgule ",".</span>
+          <div class="text-center">
+            <input class="btn btn-primary bouton col-6" type="submit" value="Prédire" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
